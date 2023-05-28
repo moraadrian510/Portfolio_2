@@ -1,0 +1,283 @@
+/* Import google font */
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+
+
+
+:root {
+  --name-font: 'Righteous', cursive;
+  --head-foot-color: #0b3954;
+  --second-base-color: #087e8b;
+  --section-fonts:  'Allura', cursive;
+}
+
+body {
+  margin: 0;
+}
+
+.headerBody {
+  background-color: var(--head-foot-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 130px;
+  padding: 0 20px;
+}
+
+.adrian {
+  color: white;
+  font-size: 4vw;
+  font-family: var(--name-font);
+  text-shadow: 1px 2px 4px rgba(252, 249, 249, .7);
+}
+
+.navbar {
+  text-align: right;
+  grid-column: 3;
+}
+
+.button {
+  padding: 5px 15px;
+  border: none;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+  font-size: 16px;
+  font-weight: bold;
+  color: #090808;
+}
+
+.button:hover {
+  color: black;
+  background-color: #ee4266;
+}
+.button:active {
+  background-color: pink;
+}
+
+/* ---About me section--- */
+
+.aboutMe {
+  position: absolute;
+  margin-left: 9vw;
+  margin-top: 1vw;
+  transform: rotate(-23deg);
+  font-family: var(--section-fonts);
+  color: rgb(14, 8, 8);
+  font-size: 6vw;
+  text-shadow: 2px 2px 4px rgba(249, 246, 246, 0.6);
+  font-weight:bolder ;
+}
+
+.highlight {
+  color: rgb(11, 220, 28);
+  text-shadow: 2px 2px 4px rgba(10, 9, 9, 0.6);
+}
+
+.about-parent {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--second-base-color);
+  min-height: 38vw;
+}
+
+.myImage {
+  border-radius: 20px;
+  background-color: white;
+  padding: 2px;
+  height: 25vw;
+  margin-left: 20vw;
+  margin-top: 6vw;
+  box-shadow: 8px 9px 14px rgba(11, 11, 11, 0.5);
+}
+
+ .about-text {
+  font-size: 20px;
+  max-width: 50%;
+  margin-right: 100px;
+  margin-top: 5vw;
+  color: white;
+  text-shadow: 4px 2px 4px rgba(0, 0, 0, 0.7);
+  line-height: 2.5vw;
+ }
+
+ .aboutMe-text {
+  color: white;
+ }
+
+ /* footer */
+
+ .footer {
+  background-color: var(--head-foot-color);
+  height: 100px
+ }
+
+ /* ---projects section --- */
+
+ .project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  padding: 2vw;
+  background-color: var(--second-base-color);
+}
+
+.project-grid a {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 100%;
+}
+
+.project-grid img {
+  position: absolute;
+  left: 0;
+  width: 80%;
+  height: 60%;
+ border-radius: 15px ;
+  box-shadow: 8px 9px 14px rgba(11, 11, 11, 0.5);
+  margin-top: 10vw;
+}
+
+.project-grid a:hover img {
+  box-shadow: 5px 9px 20px rgba(237, 235, 235, .9);
+}
+
+.projectText-wrap {
+  position: absolute;
+  margin-left: 37vw;
+  z-index: 1;
+  text-shadow: 2px 2px 4px rgba(247, 241, 241, 0.6);
+  font-weight:bolder;
+  color: rgb(244, 241, 241);
+}
+
+.projectText {
+  font-family: var(--section-fonts);
+  font-size: 6vw;
+  font-weight: bolder;
+  color: black;
+}
+
+/* --- contact section --- */
+.contact-form-container {
+  background-color: var(--second-base-color);
+  height: 37vw;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 7px 2px 10px rgba(12, 12, 12, 0.5);
+  background-color: #f2f2f2;
+  font-family: var(--section-fonts);
+  font-size: 2vw;
+  text-shadow: 2px 2px 4px rgba(14, 13, 13, 0.6);
+}
+
+.contact-form input,
+.contact-form textarea {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  width: 95%;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--head-foot-color);
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #a20092;
+}
+
+.contact-text {
+  color: rgb(14, 14, 14);
+  position: absolute;
+  margin-left: 33vw;
+  margin-top: 24vw;
+  font-family: var(--section-fonts);
+  text-shadow: 6px 3px 3px rgba(251, 251, 251, 0.6);
+  font-size: 8vw;
+  font-weight: bolder;
+  transform: rotate(-10deg);
+}
+
+/* --Resume section --- */
+
+.resume {
+  padding: 50px;
+  display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+font-size: 1.5vw;
+  background-color: #087e8b;
+  color: white;
+  text-shadow: 6px 3px 3px rgba(9, 8, 8, 0.6);
+  border-radius: 20px;
+
+}
+
+.linkedin {
+  color: rgb(156, 245, 54);
+  text-shadow: 1px 1px 3px rgba(156, 151, 151, 0.6);
+}
+
+.outter-layer {
+  padding: 50px;
+  background-image: url(./images/binary-code.jpg);
+}
+
+/* ---footer section ---*/
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--head-foot-color)
+}
+
+.footer-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px;
+  font-size: 50px;
+  color: #f6f3f3;
+}
+
+.footer-link:hover {
+  color: #ee4266;
+}
+
+.fa {
+  font-size: 40px;
+  margin-right: 10px;
+}
+
+.footer-lines {
+  position: absolute;
+  display:inline;
+  justify-content: center;
+}
+
+.footer-line {
+  width: 20%;
+  height: 1px;
+  background-color: #ccc;
+  margin: 10px 0;
+}
+
