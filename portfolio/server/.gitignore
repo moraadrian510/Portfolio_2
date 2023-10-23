@@ -1,0 +1,17 @@
+# Logs
+logs/
+
+# Environment Variables
+.env
+
+# Dependency directories
+node_modules/
+
+# Built or compiled files
+dist/
+build/
+*.exe
+
+# Temporary files
+.tmp/
+temp/
