@@ -1,5 +1,6 @@
 import './index.css';
 import { useState } from 'react';
+import { Toaster } from 'react-hot-toast';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Contact from './components/Contact';
@@ -31,7 +32,18 @@ function App() {
     <div>
       <Header handlePageChange= {handlePageChange}></Header>
       <main>
-      
+      <Toaster
+        position="top-right"
+        toastOptions={{
+          className: '',
+          style: {
+            border: '1px solid white',
+            padding: '16px',
+            color: 'black',
+            backgroundColor: 'white'
+          },
+        }}
+      /> 
       </main>
       <Footer></Footer>
     </div>
